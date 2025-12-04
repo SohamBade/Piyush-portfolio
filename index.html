@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piyush Bade | 3D Artist & Game Designer</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- BACKGROUND -->
+<div class="bg"></div>
+<canvas id="particles"></canvas>
+
+<!-- NAV -->
+<header class="floating-nav">
+  <span class="brand">PIYUSH BADE</span>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <h1 class="glow">3D Artist & Game Designer</h1>
+  <p class="lead">Crafting cinematic worlds, characters and immersive experiences</p>
+  <div class="hero-buttons">
+    <button class="btn" onclick="scrollToSection('projects')">View Work</button>
+    <button class="btn outline" onclick="scrollToSection('contact')">Contact</button>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="grid" id="projectGrid">
+
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="cards" id="about">
+
+  <div class="glass-card">
+    <h2>About Me</h2>
+    <p>I’m Piyush Bade, a 3D Artist focused on building characters, environments & game-ready models with cinematic polish and real-time optimization.</p>
+  </div>
+
+  <div class="glass-card">
+    <h2>Education</h2>
+    <p>AR / VR / Game Dev Program – Arena Animation</p>
+  </div>
+
+  <div class="glass-card">
+    <h2>Focus</h2>
+    <p>Character Art, Assets, Lighting, Optimization, Level Art</p>
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+<section class="tabs" id="skills">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills-grid">
+    <div>Blender</div><div>Maya</div><div>Unity</div><div>Substance</div>
+    <div>Texturing</div><div>Lighting</div><div>Rendering</div><div>Game Assets</div>
+  </div>
+</section>
+
+<footer id="contact">
+  © 2025 Piyush Bade • 3D Artist Portfolio
+</footer>
+
+</main>
+
+<!-- VIEWER -->
+<div class="viewer" id="viewer">
+  <button class="close" onclick="closeViewer()">X</button>
+  <iframe id="viewerFrame" sandbox="allow-scripts allow-same-origin"></iframe>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
