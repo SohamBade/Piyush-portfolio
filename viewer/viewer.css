@@ -1,0 +1,71 @@
+html,body{
+  height:100%;
+  margin:0;
+  background:#000;
+  overflow:hidden;
+}
+
+#container3D canvas{
+  width:100vw !important;
+  height:100vh !important;
+  display:block;
+}
+#controlsGuide {
+  position: fixed;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 18px;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(8px);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 22px;
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.5);
+  pointer-events: none;
+  animation: fadeGuide 1s ease;
+  z-index: 999;
+}
+
+#controlsGuide span {
+  margin-right: 6px;
+}
+
+@keyframes fadeGuide {
+  from { opacity:0; transform:translateX(-50%) translateY(-10px);}
+  to { opacity:1; transform:translateX(-50%) translateY(0);}
+}
+#settingsPanel {
+  position: fixed;
+  right: 18px;
+  top: 80px;
+  width: 200px;
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(14px);
+  color: #fff;
+  font-size: 13px;
+  box-shadow: 0 0 20px rgba(0,0,0,.6);
+  z-index: 999;
+}
+
+#settingsPanel h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #9df;
+}
+
+#settingsPanel label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#settingsPanel input[type=range] {
+  width: 100%;
+}

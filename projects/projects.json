@@ -1,0 +1,32 @@
+[
+  {
+    "id": "dino",
+    "title": "Dino Model",
+    "thumbnail": "assets/thumbnails/dino.jpeg",
+    "type": "gltf"
+  },
+  {
+    "id": "eye",
+    "title": "Eye Anatomy",
+    "thumbnail": "assets/thumbnails/eye.jpg",
+    "type": "gltf"
+  },
+  {
+    "id": "SHIELD",
+    "title": "Sci-Fi Shield",
+    "thumbnail": "assets/thumbnails/shield.jpg",
+    "type": "gltf"
+  },
+  {
+    "id": "Wolf",
+    "title": "Wolf Base",
+    "thumbnail": "assets/thumbnails/Wolf.jpg",
+    "type": "gltf"
+  },
+  {
+    "id": "watch",
+    "title": "Watch Product Viz",
+    "thumbnail": "assets/thumbnails/watch.jpg",
+    "type": "gltf"
+  }
+]
